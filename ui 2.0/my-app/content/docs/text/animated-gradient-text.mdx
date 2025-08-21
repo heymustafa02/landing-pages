@@ -1,0 +1,47 @@
+---
+title: Animated Gradient Text
+description: A component to animate the text using gradient
+author: harimanok_
+---
+
+<ComponentPreview name="text-animated-gradient-text--docs" />
+
+## Installation
+
+<Steps>
+
+<Step>Update `tailwind.config.js`</Step>
+```js
+theme: {
+    extend: {
+       keyframes: {
+         "bg-position": {
+         "0%": { backgroundPosition: "0% 50%" },
+          "100%": { backgroundPosition: "100% 50%" },
+         }
+     }
+    },
+  },
+```
+
+<Step>Run the following command</Step>
+
+It will create a new file called `animated-gradient-text.tsx` inside the `components/animata/text` directory.
+
+```bash
+mkdir -p components/animata/text && touch components/animata/text/animated-gradient-text.tsx
+```
+
+<Step>Paste the code</Step>
+
+Open the newly created file and paste the following code:
+
+```jsx file=<rootDir>/animata/text/animated-gradient-text.tsx
+
+```
+
+</Steps>
+
+## Credits
+
+Built by [hari](https://github.com/hari)

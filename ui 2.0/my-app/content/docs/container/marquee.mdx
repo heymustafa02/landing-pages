@@ -1,0 +1,56 @@
+---
+title: Marquee
+description: A marquee component
+labels: ["requires config", "requires interaction", "hover"]
+author: harimanok_
+---
+
+<ComponentPreview name="container-marquee--docs" />
+
+## Installation
+
+<Steps>
+
+<Step>Update `tailwind.config.js`</Step>
+```js
+theme: {
+    extend: {
+      keyframes: {
+         "marquee-x": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-y": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
+      }
+      animation: {
+        "marquee-horizontal": "marquee-x var(--duration) infinite linear",
+        "marquee-vertical": "marquee-y var(--duration) linear infinite",
+        },
+    },
+  },
+```
+
+<Step>Run the following command</Step>
+
+It will create a new file called `marquee.tsx` inside the `components/animata/container` directory.
+
+```bash
+mkdir -p components/animata/container && touch components/animata/container/marquee.tsx
+```
+
+<Step>Paste the code</Step>
+
+Open the newly created file and paste the following code:
+
+```jsx file=<rootDir>/animata/container/marquee.tsx
+
+```
+
+</Steps>
+
+## Credits
+
+Built by [hari](https://github.com/hari)

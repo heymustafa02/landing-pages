@@ -1,0 +1,15 @@
+{
+  "name": "be",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -b && node dist/index.js"
+  },
+  "author": "Mustafa Mallebhari",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "typescript": "^5.7.2"
+  }
+}
